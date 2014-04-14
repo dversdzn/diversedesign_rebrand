@@ -21,18 +21,35 @@
 </head>
 
 <body>
+<div class="off-canvas-wrap"> <!--must wrap all site content -->
 
+  <div class="inner-wrap"> <!-- off-canvas toggle/nav -->
+  		<div class="fixed">
+		<nav class="tab-bar hide-for-large">
+		  <section class="right-small">
+		    <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+		  </section>
+		</nav>
+  		</div>
+		
+    <!-- Off Canvas Menu -->
+    <aside class="right-off-canvas-menu">
+        <ul>
+          <li><a href="projects.html">what we've done</a></li>
+          <li><a href="about.html">who we are</a></li>
+        </ul>
+    </aside>
 
 	<div class="header"><!-- keeping header and footer outside of the "flex-container" allows the background images to tile to 100% of the screen width -->
-		<div class="ft-box">
+		<div class="hd-box hide-for-medium hide-for-small">
 			<h3 class="flushright"><a href="projects.html">things we've done</a></h3>
 		</div>
 		
-		<div class="ft-box">
+		<div class="hd-box">
 			<a href="index.html"><img src="images/d2_logo.png" /></a>
 		</div>
 		
-		<div class="ft-box">
+		<div class="hd-box hide-for-medium hide-for-small">
 			<h3 class="flushleft"><a href="about.html">who we are</a></h3>
 		</div>
 	</div> 
@@ -179,5 +196,17 @@
     <script>
       $(document).foundation();
     </script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+    $('.right-off-canvas-menu a').click(function(e){
+    $('.off-canvas-wrap').removeClass('move-left');
+})
+    </script> 
+    
+  </div><!-- close off canvas menu -->    
+</div> <!-- close off canvas wrap -->
   </body>
 </html>
