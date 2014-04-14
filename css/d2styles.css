@@ -54,9 +54,9 @@ ul {
 }
 
 .callout{
-	color: #666;
-	font-size: larger;
-	text-shadow: 0 .5px .5px #666;
+	color: #fff;
+	font-size: smaller;
+	padding: 1em;
 }
 
 .caption {
@@ -150,17 +150,19 @@ ul {
 
 .ft-box, .hd-box {
   min-width: 23%;
-  margin: auto;
-  clear: both;
   align-self: auto;
   }
-    
+
+.hd-box {
+	margin: auto;
+	clear: both;
+}  
+  
 .block {
 	width: 100%;
 	background-color: #b8dbf7;
 	padding: .5em;
 }
-
 
 .bttm-border {
 	padding-bottom: 1.25em;
@@ -174,6 +176,10 @@ ul {
 	float: none;
 	overflow: hidden;
 	height: auto;
+}
+
+.form-holder {
+	padding: 2.75em .5em 0;
 }
 /* ----- media queries ----- */
 
@@ -221,6 +227,8 @@ ul {
 .hd-box {
 	min-width: 100%;
 }  
+
+
 } 
 
   
