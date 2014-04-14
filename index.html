@@ -23,123 +23,169 @@
 <body>
 <div class="off-canvas-wrap"> <!--must wrap all site content -->
 
-  <div class="inner-wrap"> <!-- off-canvas toggle/nav -->
+	<div class="inner-wrap"> <!-- off-canvas toggle/nav -->
   		<div class="fixed">
-		<nav class="tab-bar hide-for-large">
-		  <section class="right-small">
-		    <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
-		  </section>
-		</nav>
+			<nav class="tab-bar hide-for-large">
+			  <section class="right-small">
+			    <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+			  </section>
+			</nav>
   		</div>
 		
     <!-- Off Canvas Menu -->
-    <aside class="right-off-canvas-menu">
-        <ul>
-          <li><a href="projects.html">what we've done</a></li>
-          <li><a href="about.html">who we are</a></li>
-        </ul>
-    </aside>
+	    <aside class="right-off-canvas-menu">
+	        <ul>
+	          <li><a href="projects.html">what we've done</a></li>
+	          <li><a href="about.html">who we are</a></li>
+	        </ul>
+	    </aside>
 
 	<div class="header"><!-- keeping header and footer outside of the "flex-container" allows the background images to tile to 100% of the screen width -->
-		<div class="hd-box hide-for-medium hide-for-small">
-			<h3 class="flushright"><a href="projects.html">things we've done</a></h3>
-		</div>
-		
-		<div class="hd-box">
-			<a href="index.html"><img src="images/d2_logo.png" /></a>
-		</div>
-		
-		<div class="hd-box hide-for-medium hide-for-small">
-			<h3 class="flushleft"><a href="about.html">who we are</a></h3>
-		</div>
-	</div> 
+		<div class="content"> <!-- constrains the content to 1024px wide and centered on the screen -->
+			<div class="hd-box hide-for-medium hide-for-small">
+				<h3 class="flushright"><a href="projects.html">things we've done</a></h3>
+			</div>
+			
+			<div class="hd-box">
+				<a href="index.html"><img src="images/d2_logo.png" /></a>
+			</div>
+			
+			<div class="hd-box hide-for-medium hide-for-small">
+				<h3 class="flushleft"><a href="about.html">who we are</a></h3>
+			</div>
+		</div><!-- close header content div -->
+	</div> <!-- close header -->
 
 	
-		<div class="primary">
+	<div class="primary"><!-- keeping this outside of the "flex-container" allows the background color to expand to 100% of the screen width -->
+		<div class="content"> <!-- constrains the content to 1024px wide and centered on the screen -->
 			<h1 class="pull-text">We're super awesome, you should hire us for your next project.</h1>
 		</div>
+	</div> <!-- close primary -->
 
-<div class="flex-container"> <!-- will keep main site content confined to max width of 960 -->
+	<div class="flex-container"> <!-- will keep main site content confined to max width of 1024  -->
 
-		 <div class="secondary">
+		<div class="secondary">
 			<h2>featured projects:</h2>
 			<p>Wayfarers art party raw denim 90's, fingerstache pour-over yr put a bird on it High Life flexitarian. Semiotics fixie literally lomo lo-fi cliche, four loko McSweeney's aesthetic master cleanse food truck tote bag Carles kale chips locavore.<a href="projects.html"> read more…</a></p>
-			</div>
-
-	<div class="content">			
-			<div class="ft-box">
-			<a href="projects.html"><img src="images/placeholderLarge.jpg" /></a>
-			<h5>Project Name</h5>
-			<p class="caption">Dreamcatcher cray you probably haven't heard of them Intelligentsia, disrupt aesthetic slow-carb drinking vinegar bicycle rights 3 wolf moon selfies leggings. <a href="projects.html">read more…</a></p>
-			</div>
-
-			<div class="ft-box">
-			<a href="projects.html"><img src="images/placeholderLarge.jpg" /></a>
-			<h5>Project Name</h5>
-			<p class="caption">Dreamcatcher cray you probably haven't heard of them Intelligentsia, disrupt aesthetic slow-carb drinking vinegar bicycle rights 3 wolf moon selfies leggings. <a href="projects.html">read more…</a></p>
-			</div>
-
-			<div class="ft-box">
-			<a href="projects.html"><img src="images/placeholderLarge.jpg" /></a>
-			<h5>Project Name</h5>
-			<p class="caption">Dreamcatcher cray you probably haven't heard of them Intelligentsia, disrupt aesthetic slow-carb drinking vinegar bicycle rights 3 wolf moon selfies leggings. <a href="projects.html">read more…</a></p>
-			</div>
-	</div>
-</div><!-- close flex-container -->
-
-
-<div class="block">
-	<div class="content">		
-		<div class="ft-box">	
-			<h2>about us:</h2>
-			<p>Lomo selvage literally asymmetrical. Cosby sweater mixtape tote bag, PBR gastropub artisan vinyl synth XOXO selvage put a bird on it fashion axe cornhole. Next level McSweeney's cliche fixie keytar, seitan ugh leggings wayfarers. Banjo pop-up drinking vinegar tote bag vegan, butcher mustache disrupt meh normcore pork belly church-key. Banksy disrupt pop-up Helvetica iPhone, slow-carb fingerstache keffiyeh. <a href="#">read more…</a></p> 		
 		</div>
-		
-		<div class="ft-box">	
-			<h2>our services:</h2>
-			<p>Polaroid organic tousled, Vice shabby chic slow-carb Cosby sweater PBR&B. Chia roof party vinyl scenester kogi, selvage Thundercats fap Austin. Jean shorts squid you probably haven't heard of them, semiotics forage fap bitters. Pork belly seitan forage occupy, normcore retro salvia tousled. <a href="#">read more…</a></p> 		
-		</div>	
-	</div>	
-</div>
+
+		<div class="content"><!-- open content div to hold featured projects images -->			
+				<div class="ft-box">
+				<a href="projects.html"><img src="images/placeholderLarge.jpg" /></a>
+				<h5>Project Name</h5>
+				<p class="caption">Dreamcatcher cray you probably haven't heard of them Intelligentsia, disrupt aesthetic slow-carb drinking vinegar bicycle rights 3 wolf moon selfies leggings. <a href="projects.html">read more…</a></p>
+				</div>
+
+				<div class="ft-box">
+				<a href="projects.html"><img src="images/placeholderLarge.jpg" /></a>
+				<h5>Project Name</h5>
+				<p class="caption">Dreamcatcher cray you probably haven't heard of them Intelligentsia, disrupt aesthetic slow-carb drinking vinegar bicycle rights 3 wolf moon selfies leggings. <a href="projects.html">read more…</a></p>
+				</div>
+
+				<div class="ft-box">
+				<a href="projects.html"><img src="images/placeholderLarge.jpg" /></a>
+				<h5>Project Name</h5>
+				<p class="caption">Dreamcatcher cray you probably haven't heard of them Intelligentsia, disrupt aesthetic slow-carb drinking vinegar bicycle rights 3 wolf moon selfies leggings. <a href="projects.html">read more…</a></p>
+				</div>
+		</div> <!-- close featured projects content div -->
+
+	</div><!-- close flex-container -->
+
+
+	<div class="block"><!-- keeping this outside of the "flex-container" allows the background color to expand to 100% of the screen width -->
+		<div class="content"><!-- open block content div -->	
+			<div class="ft-box">	
+				<h2>about us:</h2>
+				<p>Lomo selvage literally asymmetrical. Cosby sweater mixtape tote bag, PBR gastropub artisan vinyl synth XOXO selvage put a bird on it fashion axe cornhole. Next level McSweeney's cliche fixie keytar, seitan ugh leggings wayfarers. Banjo pop-up drinking vinegar tote bag vegan, butcher mustache disrupt meh normcore pork belly church-key. Banksy disrupt pop-up Helvetica iPhone, slow-carb fingerstache keffiyeh. <a href="#">read more…</a></p> 		
+			</div>
+			
+			<div class="ft-box">	
+				<h2>our services:</h2>
+				<p>Polaroid organic tousled, Vice shabby chic slow-carb Cosby sweater PBR&B. Chia roof party vinyl scenester kogi, selvage Thundercats fap Austin. Jean shorts squid you probably haven't heard of them, semiotics forage fap bitters. Pork belly seitan forage occupy, normcore retro salvia tousled. <a href="#">read more…</a></p> 		
+			</div>	
+		</div><!-- close block content div -->
+	</div><!-- close block -->
 
 
 	<div class="footer"><!-- open footer -->
+		<div class="content"><!-- open footer content div -->
+			<div class="ft-box"><!-- contact info -->
+				<ul>
+					<li><h4>contact us:</h4></li>
+					<li>3500 S. Sangamon St.</li>
+					<li>Chicago, IL 60609</li>
+					<li>773.550.2074</li>
+					<li>info@diversedesign.com</li>
+				</ul>
+			</div><!-- close contact -->
+			
+			<div class="ft-box"><!-- contact form -->
+				<form action="#" method="post">
+					<!-- <label for="name">Name:</label> -->
+					<input type="text" id="name" placeholder="Enter your full name" />
+					
+					<!-- <label for="email">Email:</label> -->
+					<input type="email" id="email" placeholder="Enter your email address" />
+					
+					<!-- <label for="message">Message:</label> -->
+					<textarea id="message" placeholder="What's on your mind?"></textarea>
+					
+					<input type="submit" value="Send message" />	
+				</form>   
+		  	</div><!-- close form -->
+			
+			<div class="ft-box"><!-- twitter feed -->
+				<h4>what we're saying:</h4>
+					<a class="twitter-timeline" href="https://twitter.com/dversdzn" data-widget-id="353220390375538688">Tweets by @dversdzn</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div><!-- close twitter -->
 	
-		<!-- <div class="ft-box"></div> -->
+			<div class="ft-box"><!-- testemonials -->
+				<h4>what they're saying:</h4>
 		
-		<div class="ft-box">
-			<ul>
-				<li><h3>contact us:</h3></li>
-				<li>3500 S. Sangamon St.</li>
-				<li>Chicago, IL 60609</li>
-				<li>773.550.2074</li>
-				<li>info@diversedesign.com</li>
-			</ul>
-		</div>
-		
-				<div class="ft-box">
-			<ul>
-				<li>contact form</li>
-			</ul>
-		</div>
-		
-		<div class="ft-box">
-			<ul>
-				<li><h3>what we're saying:</h3></li>
-				<li>@dversdzn twitter feed.</li>
-			</ul>
-		</div>
+				<div class="orbit-container"> <!--start slider -->
+					<ul class="example-orbit-content" data-orbit>
+						<li data-orbit-slide="headline-1">
+						<div class="praise">
+						<p>Polaroid organic tousled, Vice shabby chic slow-carb Cosby sweater PBR&B.</p>
+						<p class="caption">client 1</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-2">
+						<div class="praise">
+						<p>Pork belly seitan forage occupy, normcore retro salvia tousled.</p>
+						<p class="caption">client 2</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-3">
+						<div class="praise">
+						<p>Brunch you probably haven't heard of them Pinterest, gentrify pickled leggings.</p>
+						<p class="caption">client 3</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-4">
+						<div class="praise">
+						<p>Pork belly sriracha skateboard, Godard Etsy readymade Odd Future.</p>
+						<p class="caption">client 4</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-5">
+						<div class="praise">
+						<p>Deep v letterpress hella narwhal, single-origin coffee post-ironic Truffaut.</p>
+						<p class="caption">client 5</p>
+						</div>
+						</li>
+					</ul>
+				</div> <!-- close slider -->
+		</div><!-- close testemonials -->
 
-		<div class="ft-box">
-			<ul>
-				<li><h3>what they're saying:</h3></li>
-				<li>Carousel of client testimonials.</li>
-			</ul>
-		</div>
-		
-		<!-- <div class="ft-box"></div> -->
-						
-	</div><!-- close footer -->
+	</div><!-- close footer content div -->
+</div><!-- close footer -->
 	
 	
     <script src="js/vendor/jquery.js"></script>
@@ -157,7 +203,8 @@
 })
     </script> 
     
-  </div><!-- close off canvas menu -->    
-</div> <!-- close off canvas wrap -->
-  </body>
+		</div><!-- close off canvas menu -->    
+	</div> <!-- close off canvas wrap -->
+
+</body>
 </html>

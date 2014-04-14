@@ -23,39 +23,38 @@
 <body>
 <div class="off-canvas-wrap"> <!--must wrap all site content -->
 
-  <div class="inner-wrap"> <!-- off-canvas toggle/nav -->
+	<div class="inner-wrap"> <!-- off-canvas toggle/nav -->
   		<div class="fixed">
-		<nav class="tab-bar hide-for-large">
-		  <section class="right-small">
-		    <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
-		  </section>
-		</nav>
+			<nav class="tab-bar hide-for-large">
+			  <section class="right-small">
+			    <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+			  </section>
+			</nav>
   		</div>
 		
     <!-- Off Canvas Menu -->
-    <aside class="right-off-canvas-menu">
-        <ul>
-          <li><a href="projects.html">what we've done</a></li>
-          <li><a href="about.html">who we are</a></li>
-        </ul>
-    </aside>
+	    <aside class="right-off-canvas-menu">
+	        <ul>
+	          <li><a href="projects.html">what we've done</a></li>
+	          <li><a href="about.html">who we are</a></li>
+	        </ul>
+	    </aside>
 
 	<div class="header"><!-- keeping header and footer outside of the "flex-container" allows the background images to tile to 100% of the screen width -->
-	<div class="content">
-		<div class="hd-box hide-for-medium hide-for-small">
-			<h4 class="flushright"><a href="projects.html">things we've done</a></h4>
-		</div>
-		
-		<div class="hd-box">
-			<a href="index.html"><img src="images/d2_logo.png" /></a>
-		</div>
-		
-		<div class="hd-box hide-for-medium hide-for-small">
-			<h4 class="flushleft"><a href="about.html">who we are</a></h4>
-		</div>
-	</div>
-	</div> 
-
+		<div class="content"> <!-- constrains the content to 1024px wide and centered on the screen -->
+			<div class="hd-box hide-for-medium hide-for-small">
+				<h3 class="flushright"><a href="projects.html">things we've done</a></h3>
+			</div>
+			
+			<div class="hd-box">
+				<a href="index.html"><img src="images/d2_logo.png" /></a>
+			</div>
+			
+			<div class="hd-box hide-for-medium hide-for-small">
+				<h3 class="flushleft"><a href="about.html">who we are</a></h3>
+			</div>
+		</div><!-- close header content div -->
+	</div> <!-- close header -->
 	
 		<div class="primary">
 			<div class="content">
@@ -114,42 +113,83 @@
 
 
 	<div class="footer"><!-- open footer -->
+		<div class="content"><!-- open footer content div -->
+			<div class="ft-box"><!-- contact info -->
+				<ul>
+					<li><h4>contact us:</h4></li>
+					<li>3500 S. Sangamon St.</li>
+					<li>Chicago, IL 60609</li>
+					<li>773.550.2074</li>
+					<li>info@diversedesign.com</li>
+				</ul>
+			</div><!-- close contact -->
+			
+			<div class="ft-box"><!-- contact form -->
+				<form action="#" method="post">
+					<!-- <label for="name">Name:</label> -->
+					<input type="text" id="name" placeholder="Enter your full name" />
+					
+					<!-- <label for="email">Email:</label> -->
+					<input type="email" id="email" placeholder="Enter your email address" />
+					
+					<!-- <label for="message">Message:</label> -->
+					<textarea id="message" placeholder="What's on your mind?"></textarea>
+					
+					<input type="submit" value="Send message" />	
+				</form>   
+		  	</div><!-- close form -->
+			
+			<div class="ft-box"><!-- twitter feed -->
+				<h4>what we're saying:</h4>
+					<a class="twitter-timeline" href="https://twitter.com/dversdzn" data-widget-id="353220390375538688">Tweets by @dversdzn</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div><!-- close twitter -->
 	
-		<!-- <div class="ft-box"></div> -->
+			<div class="ft-box"><!-- testemonials -->
+				<h4>what they're saying:</h4>
 		
-		<div class="ft-box">
-			<ul>
-				<li><h3>contact us:</h3></li>
-				<li>3500 S. Sangamon St.</li>
-				<li>Chicago, IL 60609</li>
-				<li>773.550.2074</li>
-				<li>info@diversedesign.com</li>
-			</ul>
-		</div>
-		
-				<div class="ft-box">
-			<ul>
-				<li>contact form</li>
-			</ul>
-		</div>
-		
-		<div class="ft-box">
-			<ul>
-				<li><h3>what we're saying:</h3></li>
-				<li>@dversdzn twitter feed.</li>
-			</ul>
-		</div>
+				<div class="orbit-container"> <!--start slider -->
+					<ul class="example-orbit-content" data-orbit>
+						<li data-orbit-slide="headline-1">
+						<div class="praise">
+						<p>Polaroid organic tousled, Vice shabby chic slow-carb Cosby sweater PBR&B.</p>
+						<p class="caption">client 1</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-2">
+						<div class="praise">
+						<p>Pork belly seitan forage occupy, normcore retro salvia tousled.</p>
+						<p class="caption">client 2</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-3">
+						<div class="praise">
+						<p>Brunch you probably haven't heard of them Pinterest, gentrify pickled leggings.</p>
+						<p class="caption">client 3</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-4">
+						<div class="praise">
+						<p>Pork belly sriracha skateboard, Godard Etsy readymade Odd Future.</p>
+						<p class="caption">client 4</p>
+						</div>
+						</li>
+					
+						<li data-orbit-slide="headline-5">
+						<div class="praise">
+						<p>Deep v letterpress hella narwhal, single-origin coffee post-ironic Truffaut.</p>
+						<p class="caption">client 5</p>
+						</div>
+						</li>
+					</ul>
+				</div> <!-- close slider -->
+		</div><!-- close testemonials -->
 
-		<div class="ft-box">
-			<ul>
-				<li><h3>what they're saying:</h3></li>
-				<li>Carousel of client testimonials.</li>
-			</ul>
-		</div>
-		
-		<!-- <div class="ft-box"></div> -->
-						
-	</div><!-- close footer -->
+	</div><!-- close footer content div -->
+</div><!-- close footer -->
 	
 	
     <script src="js/vendor/jquery.js"></script>
@@ -167,7 +207,8 @@
 })
     </script> 
     
-  </div><!-- close off canvas menu -->    
-</div> <!-- close off canvas wrap -->
-  </body>
+		</div><!-- close off canvas menu -->    
+	</div> <!-- close off canvas wrap -->
+
+</body>
 </html>
